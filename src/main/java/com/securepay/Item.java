@@ -9,12 +9,10 @@ public class Item {
 		int min = 1;
 		int max = 20;
 		price = (float) ((Math.random() * ((max - min) + 1)) + min);
-
 		return price;
 	}
 
 	public float getShippingCost() {
-
 		int min = 2;
 		int max = 5;
 		shippingCost = (float) ((Math.random() * ((max - min) + 1)) + min);
