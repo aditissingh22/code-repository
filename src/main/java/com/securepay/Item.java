@@ -5,10 +5,6 @@ public class Item {
 	float shippingCost;
 	int rating;
 
-	public static void main(String[] args) {
-
-	}
-
 	public float getPrice() {
 		int min = 1;
 		int max = 20;
