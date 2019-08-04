@@ -51,16 +51,16 @@ public class App {
 				}
 				category.add(items); // Adding each Item in the Category List
 
-				float currentCost = lowestCostIteminEachCategory(category).getValue();// Getting the cost of the lowest
+				float costOfCategory = lowestCostIteminEachCategory(category).getValue();// Getting the cost of the lowest
 																						// item of the currently
 																						// executing Category list
-				float lastCost = totalCost + currentCost;// Storing the last modified Cost value
+				float currentTotalCost = totalCost + costOfCategory;// Getting the current total cost
 
 				int key = lowestCostIteminEachCategory(category).getKey();// Getting the key of lowest priced Item in
 																			// currently executing Category
 
-				if (lastCost < 50) {
-					totalCost = lastCost;
+				if (currentTotalCost < 50) {
+					totalCost = currentTotalCost;
 					System.out.print("Category" + i + ":Item" + key + ", ");
 
 					int currentRating = category.get(0).get(key - 1).rating;
