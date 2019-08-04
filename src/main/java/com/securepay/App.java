@@ -74,9 +74,9 @@ public class App {
 
 		System.out.println();
 		System.out.println();
-		System.out.println("Total Cost: " + totalCost);
+		System.out.println("Total Cost: " + totalCost +", and");
 		System.out.println();
-		System.out.println("Sum of ratings of all the items that were picked: " + totalRating);
+		System.out.println("Sum of ratings of all the items that were picked: " + totalRating+".");
 
 	}
 
